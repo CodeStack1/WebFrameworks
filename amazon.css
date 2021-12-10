@@ -1,0 +1,472 @@
+*
+{
+    margin:1px;
+    padding:1px;
+}
+body {
+    margin: 0px;font-family: 'Roboto', sans-serif;
+}
+ul{
+    margin: 0px;padding: 0px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5,h6 {
+    margin-top: 0px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.w-100 {  
+       width: 100%;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+#header {
+    background-color: #101336;
+    padding: 4px 0px; 
+}
+#header a {
+    color: #fff;
+}
+#header .logo {
+    height:50px;
+    width: 110px;
+    
+}
+/*#header .logo .explore {
+    font-size: 12px;
+    position: relative;
+    font-style: italic;
+    display: block;
+}
+#header .logo .explore span {
+    color: #ffe500;
+}
+#header .logo .explore img {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    width: 13%;
+}*/
+#header .search {
+    width: 50%;
+    margin-left: 20px;
+    position: relative;
+}
+#header .search input[type="text"] {
+    width: 100%;
+    padding: 0px 5px;
+    height: 30px;
+}
+#header .search button {
+    position: absolute;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    top: 10px;
+}
+#header .userSection {
+    width: 32%;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+#header .userSection ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#main-navigation {
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 24px;
+}
+#main-navigation ul li a {
+    color:#000;
+    display: block;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+#main-navigation .dropdown {
+    position: absolute;
+    width: 96%;
+    left: 0px;
+    padding: 0px;
+    display: none;
+}
+#main-navigation .dropdown ul li {
+    display: block;
+    margin: 0px;
+}
+#main-navigation .dropdown .col {
+    width: 16%;
+    padding: 20px;
+}
+#main-navigation .dropdown .col:nth-child(even) {
+    background-color: rgb(255, 208, 0);
+}
+#main-navigation .dropdown .col:nth-child(odd) {
+    background-color: white;
+}
+#main-navigation ul li:hover .dropdown {
+    display: block; 
+}
+#fixed{
+    bottom: 0; 
+    position: fixed; 
+    right: 0;    
+}
+.overlay {
+    position:absolute;
+    /* color with alpha transparency */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* stretch to screen edges */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.mySlides{
+    max-height: 1000px;
+    max-width: 500px;
+    width: 500px;
+  }
+#video{
+    display: block;
+    margin: 0 auto; 
+    height: 90%;   
+}
+
+/*#imo {
+    float: left;
+    width:  100%;
+    height: 1000%px;
+    object-fit: cover;
+    position: center;
+}
+#banner .carousel-caption {
+    bottom: 50%;
+}
+#banner .carousel-item:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;*/
+    
+#img{
+    float: left;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+/*#banner .carousel-caption {
+    bottom: 50%;
+}
+#banner .carousel-item:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+<style>
+   .flex-column { 
+       max-width : 100%;
+   }
+</style>
+<style>
+        .container {
+            background: #f9f9f9;
+        }
+      
+        img {
+            margin: 5px;
+        }
+</style>}*/
+#rate{
+  
+    position: relative 20px;
+    left: -20px; 
+}
+/** {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+.containerr {
+    display: flex;
+}
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.item {
+    margin: 50px;
+}*/
+h2{
+    border:1px;
+    padding-top: 20px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .slideshow-container {
+    position: relative;
+   
+
+  }
+  
+  /* Hide the images by default*/
+  .mySlides {
+    display:none;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-slideshow-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.flexo {
+    width: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+/*.flexo:nth-child(3n) {
+    width: 100%;
+  }*/
+
+
+
+/*.element:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.element{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.scale1{
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+}
+
+.scale1:hover {
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+    transform: scaleX(1.2);
+}
+
+.scale2{
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+}
+
+.scale2:hover {
+    -webkit-transform: scaleY(.8);
+    -moz-transform: scaleY(.8);
+    -o-transform: scaleY(.8);
+    transform: scaleY(.8);
+}
+.translate1{
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+}
+
+.translate1:hover {
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+}
+
+/* second image 
+.translate2{
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+}
+
+.translate2:hover {
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+}
+.translate1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:30px;
+}
+.translate2{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:30px;
+}*/
+.transalte1{
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+}
+.translate1:hover {
+    -webkit-transform: scale(1.2, .8);
+    -moz-transform: scale(1.2, .8);
+    -o-transform: scale(1.2, .8);
+    transform: scale(1.2, .8);
+}
+
+.translate1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 390px;
+}
+
+.multi-bg {
+    width: 100%;
+    height: 400px;
+    background-image: url(images/blocks.png),url(),linear-gradient(to right, #1c1f3f, rgb(241, 160, 38));
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: bottom right,
+        left,
+        right;
+  }
+.bgo{
+  display: block;
+  margin-left: 15px;
+  margin-right: auto;
+  width: 710px;
+  padding-top: 50px;
+   
+}

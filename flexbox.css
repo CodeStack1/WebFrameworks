@@ -1,0 +1,30 @@
+.left{
+    width: 25%;
+    border: 2px solid blue;
+}
+
+.center{
+    width: 50%;
+    border: 2px solid red;
+}
+
+.right{
+    width: 25%;
+    border: 2px solid red;
+}
+div{
+    display: flex;
+}
+img{
+    width: 30%;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid red;
+    background-color: lightpink;
+}

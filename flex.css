@@ -1,0 +1,44 @@
+#parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.col-1, .col-2, .col-3{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 0px 10px;
+}
+header{
+    background-color: lightskyblue;
+    width: 100%;
+    text-align: center;
+}
+p{
+    margin: 0px;
+}
+img{
+    width: 100%;
+}
+.col-1{
+    width: 20%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 20%;
+}
+w1{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li{
+    border: 2px solid red;
+    height: 200px;
+    width: 30%;
+    margin: 10px 0px;
+}

@@ -1,0 +1,33 @@
+img{
+    position: absolute;
+    height: 120px;
+    bottom: 0px;
+    left: 50%;
+    animation-duration: 5s;
+    animation-name: anim1;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1{
+    0%{
+        left: 45%;
+        bottom: 0px;
+    }
+    25%{
+        bottom: 55%;
+        left: 0px;
+        transform: rotate(360deg);
+    }
+    50%{
+        bottom: 80%;
+        left: 45%;
+    }
+    75%{
+        bottom: 55%;
+        left: 89%;
+    }
+    100%{
+        left: 45%;
+        bottom: 0px;
+    }
+}
