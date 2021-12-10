@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+        <title>my salary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+      </head>
+      <body>
+        <div class="container">
+        <h1>My salary calculator</h1>
+        
+      <form>
+         
+        <div class="box">
+          <h2>Annual salary</h2>
+          <div class="net_gross">  
+          <input id="annual_net" type="text" placeholder="0" onkeyup="myAnnualNet()">€ NET
+          </div>
+          
+          <div class="net_gross"> 
+          <input id="annual_gross" type="text" placeholder="0" onkeyup="myAnnualGross()">€ GROSS
+          </div>
+        </div>
+        
+            
+         <div class="box">
+          
+           <h2>Monthly salary</h2>
+         
+            <div class="net_gross">
+                <input id="month_net" type="text" placeholder="0" onkeyup="myMonthNet()">€ NET
+           </div>
+       
+            <div class="net_gross">   
+                <input id="month_gross" type="text" placeholder="0" onkeyup="myMonthGross()">€ GROSS
+            </div>
+              
+         </div>  
+           
+         <div class="box">
+          
+           <h2>Hourly salary</h2>
+         
+            <div class="net_gross">
+                <input id="hourly_net" type="text" placeholder="0" onkeyup="myHourlyNet()">€ NET
+            </div>
+         
+            <div class="net_gross">
+                <input id="hourly_gross" type="text" placeholder="0" onkeyup="myHourlyGross()">€ GROSS
+            </div>
+       
+        </div>
+        
+      </form>
+        
+        <div class="reset" onclick="reset()">RESET ALL ENTRIES</div>
+          
+        </div>
+      
+      </body>
+</html>
